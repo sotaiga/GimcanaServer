@@ -26,13 +26,13 @@
 
         @foreach ($equips as $index => $equip)
         <tr>
-            <td>{!! $index !!}</td>
+            <td>{!! $index + 1 !!}</td>
             <td>{!! $equip->equip_nom !!}</td>
             <td>{!! $equip->equip_email !!}</td>
             <td>{!! $equip->punts !!}</td>
             <td>{!! $equip->equip_num_respostes_correctes !!}</td>
             <td>{!! $equip->equip_num_respostes_en_ordre !!}</td>
-            <td>{!! $equip->temps !!}</td>
+            <td>{!! $equip->minuts !!}</td>
             <td>{!! $equip->equip_inici !!}</td>
             <td>{!! $equip->equip_fi !!}</td>
         </tr>

@@ -79,7 +79,7 @@ class Equip extends Model
 
             $diff = $inici->diff($fi);
 
-            return $diff->i;
+            return ($diff->h * 60) + $diff->i;
         }
         else
         {

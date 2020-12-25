@@ -388,9 +388,9 @@ class WebController extends Controller
 
                 $now = new DateTime();
 
-                $equip->equip_fi                        = $now->format('Y-m-d h:i:s');
-                $equip->equip_num_respostes_correctes   = $puntuacio[0]->punts;
-                $equip->equip_punts_respostes_correctes = $puntuacio[0]->counter;
+                $equip->equip_fi                        = $now->format('Y-m-d H:i:s');
+                $equip->equip_num_respostes_correctes   = $puntuacio[0]->counter;
+                $equip->equip_punts_respostes_correctes = $puntuacio[0]->punts;
                 $equip->equip_ordre_correcte            = ($respostes_ordre_correcte == $plantilles->count());
                 $equip->equip_num_respostes_en_ordre    = $respostes_ordre_correcte;
                 $equip->equip_punts_respostes_en_ordre  = ($respostes_ordre_correcte * 5);
